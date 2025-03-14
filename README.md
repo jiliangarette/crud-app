@@ -1,1 +1,3 @@
-another `crud` another day
+### concepts
+
+`orm` `django` `rebase` `aws(rds)` `postgresql`
