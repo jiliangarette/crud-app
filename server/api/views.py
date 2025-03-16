@@ -21,10 +21,16 @@ class BlogPostRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = BlogPostSerialzer
     lookup_field = "pk"
     
+    
+# to create a custom api route
 class Bloglists(APIView):
+    # to write a method that we want (get, post, delete, etc.
     def get(self, request, format=None):
+        
+        # then query parameter
         title = request.query_params.get("title", "")
         
+        # to check if title exist
         if title:
             blog_posts = BlogPost.objects.filter(title__icontains=title)
         else:
