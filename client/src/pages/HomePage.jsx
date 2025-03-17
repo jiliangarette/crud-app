@@ -29,11 +29,9 @@ const HomePage = () => {
           </HeroSection>
         </SectionContainer>
         <SectionContainer id="data-model">
-          <SectionContainer>
-            <DataModelSection>
-              <SectionTitle>Blog Post Data Model</SectionTitle>
-            </DataModelSection>
-          </SectionContainer>
+          <DataModelSection>
+            <SectionTitle>Blog Post Data Model</SectionTitle>
+          </DataModelSection>
         </SectionContainer>
         <SectionContainer id="demo">
           <SectionTitle>How It Works</SectionTitle>
