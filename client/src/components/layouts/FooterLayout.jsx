@@ -1,17 +1,23 @@
 import { Github } from "lucide-react";
+import Button from "../common/Button";
 
 const FooterLayout = () => {
   return (
-    <footer className="border-t border-slate-200 h-12 flex items-center justify-between px-4">
-      <p className="text-sm text-gray-500">
-        © {new Date().getFullYear()} Jiliann. All rights reserved.
-      </p>
-      <div className="flex space-x-6">
-        <a href="#" className="text-slate-600">
-          <span className="sr-only">GitHub</span>
-          <Github size={18} />
-        </a>
+    <footer className="border-t border-slate-200 h-10 flex items-center justify-between px-4">
+      <div className="text-xs flex items-center">
+        © {new Date().getFullYear()} /
+        <Button
+          variant="link"
+          link="http://jiliangarette.com"
+          className="text-gray-950"
+        >
+          jiliangarette.com
+        </Button>
       </div>
+      <Button
+        link="http://github.com/jiliangarette"
+        icon={<Github size={14} />}
+      />
     </footer>
   );
 };
