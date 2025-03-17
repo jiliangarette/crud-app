@@ -1,16 +1,33 @@
-const Button = ({ variant = "secondary", click, children, icon }) => {
+import { Link } from "react-router-dom";
+
+const Button = ({
+  variant = "secondary",
+  click,
+  children,
+  icon,
+  link,
+  className,
+}) => {
   const variants = {
     primary:
-      "border-slate-200 bg-slate-100 border cursor-pointer hover:opacity-75",
-    secondary: "border-slate-200 border cursor-pointer hover:bg-slate-50",
-    simple: "cursor-pointer hover:bg-slate-50",
+      "border-gray-200 bg-gray-100 border cursor-pointer hover:opacity-75",
+    secondary: "border-gray-200 border cursor-pointer hover:bg-gray-50",
+    ghost: "cursor-pointer hover:bg-gray-50",
+    link: "bg-none border-none hover:opacity-90",
   };
 
-  const baseStyles = "h-8 px-2 flex items-center text-sm gap-1 rounded-sm";
+  const baseStyles =
+    "h-6 px-1 flex items-center text-xs gap-1 justify-center rounded-sm text-gray-700";
 
-  const classes = `${baseStyles}  ${variants[variant] || variants.primary}`;
+  const classes = `${baseStyles} ${className}  ${
+    variants[variant] || variants.primary
+  }`;
 
-  return (
+  return link ? (
+    <Link to={link} className={classes}>
+      {icon && icon} {children}
+    </Link>
+  ) : (
     <button className={classes} onClick={click}>
       {icon && icon} {children}
     </button>
