@@ -10,14 +10,16 @@ const Button = ({
 }) => {
   const variants = {
     primary:
-      "border-gray-200 bg-gray-100 border cursor-pointer hover:opacity-75",
-    secondary: "border-gray-200 border cursor-pointer hover:bg-gray-50",
+      "bg-gray-800 font-semibold text-gray-50 border cursor-pointer hover:opacity-75 h-7 px-2",
+    secondary:
+      "border-gray-200 border font-semibold cursor-pointer hover:bg-gray-50 h-7 px-2",
     ghost: "cursor-pointer hover:bg-gray-50",
     link: "bg-none border-none hover:opacity-90",
+    icon: "border-gray-200 border cursor-pointer hover:bg-gray-50 h-7 w-7",
   };
 
   const baseStyles =
-    "h-6 px-1 flex items-center text-xs gap-1 justify-center rounded-sm text-gray-700";
+    "h-6 px-1 flex items-center text-xs gap-1 justify-center rounded-md ";
 
   const classes = `${baseStyles} ${className}  ${
     variants[variant] || variants.primary
