@@ -27,26 +27,6 @@ const BlogForm = () => {
               placeholder="Enter post content"
             ></textarea>
           </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Author
-            </label>
-            <input
-              type="text"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
-              placeholder="Enter author name"
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Tags (comma separated)
-            </label>
-            <input
-              type="text"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
-              placeholder="technology, tutorial, react"
-            />
-          </div>
           <div className="flex justify-end space-x-2">
             <button className="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors">
               Cancel

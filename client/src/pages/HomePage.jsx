@@ -12,12 +12,12 @@ const HomePage = () => {
     {
       title: "hello world title",
       content: "hello world contentn",
-      published_at: "2 days ago",
+      published_date: "2 days ago",
     },
     {
       title: "The state of the art react",
       content: "Welcom to the new react conference 2025",
-      published_at: "2 days ago",
+      published_date: "2 days ago",
     },
   ];
   return (
