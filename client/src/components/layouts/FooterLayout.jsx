@@ -17,6 +17,7 @@ const FooterLayout = () => {
       <Button
         link="http://github.com/jiliangarette"
         icon={<Github size={14} />}
+        variant="icon"
       />
     </footer>
   );
